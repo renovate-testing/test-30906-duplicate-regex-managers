@@ -9,4 +9,4 @@ Renovate may crash if the number of dependencies becomes large.
 
 ## Expected behavior
 
-The number of dependecies should remain the same after successive runs.
+The number of dependecies should remain the same after subsequent runs.
