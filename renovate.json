@@ -1,0 +1,20 @@
+{
+    "extends": ["config:base", ":dependencyDashboard"],
+    "regexManagers": [
+      {
+        "fileMatch": ["APKBUILD$"],
+        "matchStrings": [
+          "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s*\\n\\s*opamdepends=\"\\$\\{?opamdepends\\}?\\s*(.*)=(?<currentValue>.*?)?\""
+        ],
+        "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+      },
+      {
+        "fileMatch": ["APKBUILD$"],
+        "matchStrings": [
+          "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s*\\n\\s*makedepends=\"\\$\\{?makedepends\\}?\\s*(.*)=(?<currentValue>.*?)(-r99)?\""
+        ],
+        "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+      }
+    ]
+  }
+  
