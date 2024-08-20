@@ -4,7 +4,7 @@ Reproduction for [Renovate issue 30906](https://github.com/renovatebot/renovate/
 
 ## Current behavior
 
-Renovate increases the number of dependencies in the repository after each run if one of the dependencies has an incorrect version format.
+Renovate increases the number of dependencies in the repository after each run customManagers process the same file.
 Renovate may crash if the number of dependencies becomes large.
 
 ## Expected behavior
