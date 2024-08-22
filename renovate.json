@@ -7,13 +7,6 @@
       "matchStrings": ["a=(?<currentValue>.*)"],
       "datasourceTemplate": "github-tags",
       "depNameTemplate": "colinhacks/zod"
-    },
-    {
-      "customType": "regex",
-      "fileMatch": ["file"],
-      "matchStrings": ["b=(?<currentValue>.*)"],
-      "datasourceTemplate": "github-tags",
-      "depNameTemplate": "redis/redis"
     }
   ]
 }
