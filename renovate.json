@@ -6,7 +6,7 @@
       "fileMatch": ["file"],
       "matchStrings": ["a=(?<currentValue>.*)"],
       "datasourceTemplate": "github-tags",
-      "depNameTemplate": "renovatebot/renovate"
+      "depNameTemplate": "renovatebot/zod"
     },
     {
       "customType": "regex",
