@@ -4,7 +4,7 @@
     {
       "customType": "regex",
       "fileMatch": ["file"],
-      "matchStrings": ["a=(?<currentValue>.*)"],
+      "matchStrings": ["zod=(?<currentValue>.*)"],
       "datasourceTemplate": "github-tags",
       "depNameTemplate": "colinhacks/zod"
     }
